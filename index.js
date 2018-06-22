@@ -73,5 +73,4 @@ const allSeasonsWordFrequencies = seasons
 const allSeasonsWordFrequencyTuples = getWordFrequencyTuples(allSeasonsWordFrequencies);
 const sortedAllSeasonsWordFrequencyTuples = getSortedWordFrequencyTuples(allSeasonsWordFrequencyTuples);
 
-writeDataToFile(sortedAllSeasonsWordFrequencyTuples, 'allSeasonsWordFrequency.json');
 writeDataToFile(sortedAllSeasonsWordFrequencyTuples.slice(0, 100), 'allSeasonsTop100WordFrequency.json');
