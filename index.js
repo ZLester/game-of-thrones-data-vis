@@ -22,11 +22,10 @@ const getWordFrequencyByLine = (freq, line) => {
         .filter(word => Boolean(word.length) && !stopWords.has(word));
 
     words.forEach(word => {
-        const wordClean = word.toLowerCase();
-        if (!freq[wordClean]) {
-            freq[wordClean] = 0;
+        if (!freq[word]) {
+            freq[word] = 0;
         }
-        freq[wordClean]++;
+        freq[word]++;
     });
 
     return freq;
